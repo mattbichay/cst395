@@ -34,13 +34,20 @@ public class App
     }
 
     public static void main( String[] args ) throws Exception {
-        String targetName = args[0];
+        String targetName = "mbichay@csumb.edu";
         long assignmentNumber = Long.valueOf(args[1]);
 
         List<String> names = new ArrayList<String>();
-        names.add("a");
-        names.add("b");
-        names.add("c");
+        names.add("mbichay@csumb.edu");
+        names.add("mariangarcia@csumb.edu");
+        names.add("lgarciajimenez@csumb.edu");
+        names.add("savillavicencio@csumb.edu");
+        names.add("mhernandezbucio@csumb.edu");
+        names.add("asorto@csumb.edu");
+        names.add("chmartinez@csumb.edu");
+        names.add("sathya");
+        names.add("katie");
+
         Collections.shuffle(names, new Random(assignmentNumber));
 
         App app = new App(names);
